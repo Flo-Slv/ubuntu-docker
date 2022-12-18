@@ -29,7 +29,7 @@ userdel -r flo
 sudo apt install git zsh zsh-syntax-highlighting curl i3 rofi compton \
 tree ripgrep fd-find silversearcher-ag unzip bat \
 neofetch stow mlocate zoxide python3-pip libsqlite3-dev \
-libssl-dev
+libssl-dev wget
 
 cd ~ && mkdir ~/Flo ~/Flo/Dev ~/Flo/Downloads ~/Flo/Apps ~/Flo/Dotfiles
 ```
@@ -74,4 +74,10 @@ cd Tmux && sh autogen.sh
 make && sudo make install
 
 tmux -V
+
+cd ~ && mkdir .tmux .tmux/tmux-powerline-custom-themes
+
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+git clone https://github.com/erikw/tmux-powerline.git ~/.tmux/plugins/tmux-powerline
 ```
