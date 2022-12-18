@@ -24,3 +24,20 @@ sudo -su flo
 ```sh
 userdel -r flo
 ```
+
+```sh
+sudo apt install git zsh zsh-syntax-highlighting curl i3 rofi compton \
+tree ripgrep fd-find silversearcher-ag unzip bat \
+neofetch stow mlocate zoxide python3-pip libsqlite3-dev \
+libssl-dev
+
+cd ~ && mkdir ~/Flo ~/Flo/Dev ~/Flo/Downloads ~/Flo/Apps ~/Flo/Dotfiles
+```
+
+```sh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+sudo chmod 777 ~/.oh-my-zsh/tools/uninstall.sh
+sudo ~/.oh-my-zsh/tools/uninstall.sh
+rm -rf ~/.oh-my-zsh && rm -rf ~./shell.pre-oh-my-zsh && rm -rf ~/.zshrc && rm -rf ~/.zsh_history
+```
