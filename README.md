@@ -1,5 +1,18 @@
 # ubuntu-docker
 
+If you want to use WSL 2 and Ubuntu integration on Windows directly into docker.
+
+```sh
+wsl.exe -l -v
+
+wsl.exe --set-version Ubuntu-22.04 2
+
+```
+
+If you want to use official Ubuntu images from Docker Hub.
+
+Run windows shell or powershell as legacy mode to avoid an issue with ctrl+z command !
+
 ```sh
 docker pull ubuntu:latest
 docker images
@@ -80,4 +93,18 @@ cd ~ && mkdir .tmux .tmux/tmux-powerline-custom-themes
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 git clone https://github.com/erikw/tmux-powerline.git ~/.tmux/plugins/tmux-powerline
+
+wget https://raw.githubusercontent.com/Flo-Slv/Dotfiles/main/tmux/.tmux.conf
+
+wget https://raw.githubusercontent.com/Flo-Slv/Dotfiles/main/tmux/.tmux.powerlinerc
+
+wget -P ~/.tmux/tmux-powerline-custom-themes https://raw.githubusercontent.com/Flo-Slv/Dotfiles/main/tmux/.tmux/tmux-powerline-custom-themes/flo-theme.sh
+
+tmux
+
+cd ~ && nvim .tmux.conf
+
+# ctrl+z I to install plugins
+# ctrl+z r to re source tmux
+# Save/close
 ```
