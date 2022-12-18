@@ -41,3 +41,13 @@ sudo chmod 777 ~/.oh-my-zsh/tools/uninstall.sh
 sudo ~/.oh-my-zsh/tools/uninstall.sh
 rm -rf ~/.oh-my-zsh && rm -rf ~./shell.pre-oh-my-zsh && rm -rf ~/.zshrc && rm -rf ~/.zsh_history
 ```
+
+```sh
+sudo apt install ninja-build gettext libtool libtool-bin autoconf automake cmake g++ pkg-config doxygen
+
+cd ~/Flo/Apps && git clone https://github.com/neovim/neovim Neovim
+
+cd Neovim && make CMAKE_BUILD_TYPE=RelWithDebInfo
+
+sudo make install
+```
