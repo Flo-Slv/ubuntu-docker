@@ -55,3 +55,23 @@ sudo make install
 ```sh
 cd ~ && pip3 install pynvim
 ```
+
+```sh
+cd ~ && sudo apt update && sudo apt upgrade
+
+sudo apt remove tmux && sudo apt autoremove
+
+rm -rf .tmux
+
+sudo apt install libevent-dev ncurses-dev build-essential bison
+
+cd ~/Flo/Apps && git clone https://github.com/tmux/tmux.git Tmux
+
+cd Tmux && sh autogen.sh
+
+./configure
+
+make && sudo make install
+
+tmux -V
+```
