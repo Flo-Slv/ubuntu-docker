@@ -51,3 +51,7 @@ cd Neovim && make CMAKE_BUILD_TYPE=RelWithDebInfo
 
 sudo make install
 ```
+
+```sh
+cd ~ && pip3 install pynvim
+```
