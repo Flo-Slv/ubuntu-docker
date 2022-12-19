@@ -14,7 +14,7 @@ If you don't use WSL 2 Ubuntu integration as default, you need to run windows sh
 ```sh
 docker pull ubuntu:22.04
 docker images
-docker run -it --name ubuntu -v E:\Dev\Ubuntu:/home ubuntu
+docker run -it --name ubuntu -v E:\Dev\Ubuntu:/home ubuntu:22.04
 ```
 
 ```sh
