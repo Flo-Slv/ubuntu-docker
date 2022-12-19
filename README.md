@@ -105,4 +105,10 @@ cd ~ && nvim .tmux.conf
 # ctrl+z I to install plugins
 # ctrl+z r to re source tmux
 # Save/close
+
+mv ~/.tmux/plugins/tmux-powerline/themes/default.sh ~/.tmux/plugins/tmux-powerline/themes/default.sh.old
+
+ln -s ~/.tmux/tmux-powerline-custom-themes/flo-theme.sh ~/.tmux/plugins/tmux-powerline/themes/default.sh
+
+Close Tmux then close and re open terminal.
 ```
