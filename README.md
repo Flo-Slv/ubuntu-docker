@@ -12,7 +12,7 @@ wsl.exe --set-version Ubuntu-22.04 2
 If you don't use WSL 2 Ubuntu integration as default, you need to run windows shell or powershell as legacy mode to avoid an issue with ctrl+z command !
 
 ```sh
-docker pull ubuntu:latest
+docker pull ubuntu:22.04
 docker images
 docker run -it --name ubuntu -v E:\Dev\Ubuntu:/home ubuntu
 ```
