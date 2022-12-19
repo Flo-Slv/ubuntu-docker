@@ -1,4 +1,4 @@
-# ubuntu-docker
+# Docker - Ubuntu 22.04 image for windows 
 
 If you want to use WSL 2 and Ubuntu integration on Windows directly into docker.
 
